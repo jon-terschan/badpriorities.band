@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #050505;
+  --color-surface: #0d0d0d;
+  --color-surface-2: #111111;
+  --color-text: #f4f4f4;
+  --color-muted: #bdbdbd;
+  --color-muted-2: #888888;
+  --color-line: #2a2a2a;
+  --color-line-soft: #252525;
+  --color-accent: #f4f4f4;
+  --color-accent-text: #050505;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,8 +23,8 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
-  background: #050505;
-  color: #f4f4f4;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 img {
@@ -31,9 +44,9 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0.85rem 1rem;
-  background: rgba(5, 5, 5, 0.88);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--color-line-soft);
 }
 
 .brand {
@@ -68,10 +81,10 @@ main {
 }
 
 .hero-image-wrap {
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--color-line);
   border-radius: 18px;
   overflow: hidden;
-  background: #111;
+  background: var(--color-surface-2);
 }
 
 .hero-image {
@@ -87,7 +100,7 @@ main {
 
 .eyebrow {
   margin: 0 0 0.75rem;
-  color: #aaa;
+  color: var(--color-muted-2);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -123,7 +136,7 @@ h3 {
 
 .intro {
   max-width: 42rem;
-  color: #d5d5d5;
+  color: var(--color-muted);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
@@ -140,16 +153,16 @@ h3 {
   align-items: center;
   min-height: 48px;
   padding: 0.8rem 1.25rem;
-  border: 1px solid #f4f4f4;
+  border: 1px solid var(--color-accent);
   border-radius: 999px;
-  color: #050505;
-  background: #f4f4f4;
+  color: var(--color-accent-text);
+  background: var(--color-accent);
   text-decoration: none;
   font-weight: 700;
 }
 
 .button.secondary {
-  color: #f4f4f4;
+  color: var(--color-accent);
   background: transparent;
 }
 
@@ -159,7 +172,7 @@ h3 {
 
 .section {
   padding: 4rem 0;
-  border-top: 1px solid #252525;
+  border-top: 1px solid var(--color-line-soft);
 }
 
 .section-heading {
@@ -173,9 +186,9 @@ h3 {
 
 .embed-card {
   padding: 1rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--color-line);
   border-radius: 16px;
-  background: #0d0d0d;
+  background: var(--color-surface);
 }
 
 .embed-card iframe {
@@ -190,9 +203,9 @@ h3 {
   place-items: center;
   min-height: 180px;
   padding: 1rem;
-  border: 1px dashed #444;
+  border: 1px dashed var(--color-line);
   border-radius: 12px;
-  color: #aaa;
+  color: var(--color-muted-2);
   text-align: center;
 }
 
@@ -204,9 +217,9 @@ h3 {
 
 .member-card {
   padding: 0.75rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--color-line);
   border-radius: 14px;
-  background: #0d0d0d;
+  background: var(--color-surface);
 }
 
 .member-card img {
@@ -223,16 +236,16 @@ h3 {
 
 .member-card p {
   margin-bottom: 0;
-  color: #bdbdbd;
+  color: var(--color-muted);
   font-size: 0.9rem;
 }
 
 .rider-box {
   max-width: 760px;
   padding: 1.25rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--color-line);
   border-radius: 16px;
-  background: #0d0d0d;
+  background: var(--color-surface);
 }
 
 .rider-box ul {
@@ -247,6 +260,7 @@ h3 {
 .email-link {
   display: inline-block;
   margin: 0.5rem 0 1.5rem;
+  color: var(--color-accent);
   font-size: clamp(1.4rem, 5vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.05em;
@@ -263,23 +277,23 @@ h3 {
 
 .socials a {
   padding: 0.65rem 0.9rem;
-  border: 1px solid #333;
+  border: 1px solid var(--color-line-soft);
   border-radius: 999px;
-  color: #ddd;
+  color: var(--color-muted);
   text-decoration: none;
 }
 
 .socials a:hover {
-  border-color: #fff;
-  color: #fff;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .site-footer {
   width: min(100% - 2rem, 1100px);
   margin: 0 auto;
   padding: 2rem 0;
-  border-top: 1px solid #252525;
-  color: #888;
+  border-top: 1px solid var(--color-line-soft);
+  color: var(--color-muted-2);
 }
 
 @media (min-width: 760px) {
