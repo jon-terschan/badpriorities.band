@@ -1,7 +1,36 @@
 * {
   box-sizing: border-box;
 }
+/* yellow to hot green */
+:root {
+  --color-bg: #f2d335;
+  --color-surface: #ffe66d;
+  --color-surface-2: #fff1a3;
+  --color-text: #090909;
+  --color-muted: #2c2c1f;
+  --color-muted-2: #5f5628;
+  --color-line: #0f0f0f;
+  --color-line-soft: #9f8926;
+  --color-accent: #ff2fb3;
+  --color-accent-text: #050505;
+}
 
+/* yellow to hot pink 
+:root {
+  --color-bg: #f2d335;
+  --color-surface: #ffe66d;
+  --color-surface-2: #fff1a3;
+  --color-text: #090909;
+  --color-muted: #2c2c1f;
+  --color-muted-2: #5f5628;
+  --color-line: #0f0f0f;
+  --color-line-soft: #9f8926;
+  --color-accent: #00f06a;
+  --color-accent-text: #050505;
+}
+*/
+/* black monochrome */
+/*
 :root {
   --color-bg: #050505;
   --color-surface: #0d0d0d;
@@ -14,7 +43,7 @@
   --color-accent: #f4f4f4;
   --color-accent-text: #050505;
 }
-
+*/
 html {
   scroll-behavior: smooth;
 }
