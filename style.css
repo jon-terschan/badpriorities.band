@@ -142,12 +142,16 @@ main {
   border: 1px solid var(--color-line);
   border-radius: 18px;
   background: var(--color-surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .hero-text {
