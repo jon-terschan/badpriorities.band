@@ -5,75 +5,160 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Band Name</title>
-  <meta name="description" content="Official website of Band Name. Music, shows, photos, and booking contact.">
+  <title>Bad Priorities Band</title>
+  <meta name="description" content="Official website of Bad Priorities. Music, shows, tech rider, and booking contact.">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="page">
-    <header class="hero">
-      <img src="images/itsnoteasy_sticker_draft.png" alt="Band Name photo" class="hero-image">
+  <header class="site-header">
+  <a class="brand" href="#top" aria-label="Bad Priorities home">
+    <img src="images/logo.png" alt="" class="logo">
+    <span>Bad Priorities</span>
+  </a>
 
-      <h1>Band Name</h1>
-      <p class="tagline">Dark noisy guitar music from somewhere.</p>
-    </header>
+  <!--
+  <nav class="nav">
+    <a href="#music">Music</a>
+    <a href="#members">Members</a>
+    <a href="#rider">Rider</a>
+    <a href="#booking">Booking</a>
+  </nav>
+  -->
+</header>
 
-    <section>
-      <h2>Listen</h2>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-image-wrap">
+        <img src="images/itsnoteasy.png" alt="Bad Priorities band photo" class="hero-image">
+      </div>
 
-      <p>
-        Latest tracks, demos, and releases.
-      </p>
+      <div class="hero-text">
+        <p class="eyebrow">Rock covers / vibe / vibe</p>
+        <h1>Bad Priorities</h1>
 
-      <!-- Replace this with a Bandcamp/SoundCloud/Spotify embed later -->
-      <a class="button" href="https://bandcamp.com" target="_blank" rel="noreferrer">
-        Listen on Bandcamp
-      </a>
-    </section>
+        <p class="intro">
+          Six-piece band making fun Music with a capital M.
+        </p>
 
-    <section>
-      <h2>Shows</h2>
-
-      <ul class="shows">
-        <li>
-          <strong>12 July 2026</strong><br>
-          Venue Name — City
-        </li>
-        <li>
-          <strong>24 August 2026</strong><br>
-          Festival Name — City
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Photos</h2>
-
-      <div class="gallery">
-        <img src="images/itsnoteasy_sticker_draft.png" alt="Live photo of Band Name">
-        <img src="images/itsnoteasy_sticker_draft.png" alt="Band Name rehearsal photo">
+        <div class="button-row">
+          <a class="button" href="#music">Listen</a>
+          <a class="button secondary" href="#booking">Booking</a>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
+    <section id="music" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Samples</p>
+        <h2>Music</h2>
+      </div>
 
-      <p>Booking, press, and general contact:</p>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <h3>SoundCloud</h3>
 
-      <a class="button" href="mailto:booking@example.com">
-        booking@example.com
-      </a>
+          <!-- replace with soundcloud embed code -->
+          <div class="embed-placeholder">
+            SoundCloud embed goes here
+          </div>
+        </div>
+
+        <div class="embed-card">
+          <h3>Bandcamp</h3>
+
+          <!-- replace with bandcamp embed code -->
+          <div class="embed-placeholder">
+            Bandcamp embed goes here
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-      <a href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a>
-      <a href="https://soundcloud.com" target="_blank" rel="noreferrer">SoundCloud</a>
-    </footer>
+    <section id="members" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Lineup</p>
+        <h2>Musicians</h2>
+      </div>
+
+      <div class="member-grid">
+        <article class="member-card">
+          <img src="images/member-1.jpg" alt="Member 1">
+          <h3>Lina</h3>
+          <p>Vocals</p>
+        </article>
+
+        <article class="member-card">
+          <img src="images/member-2.jpg" alt="Member 2">
+          <h3>Aurélien</h3>
+          <p>Drums</p>
+        </article>
+
+        <article class="member-card">
+          <img src="images/member-3.jpg" alt="Member 3">
+          <h3>Yannis</h3>
+          <p>Guitar </p>
+        </article>
+
+        <article class="member-card">
+          <img src="images/member-4.jpg" alt="Member 4">
+          <h3>Jon</h3>
+          <p>Bass</p>
+        </article>
+
+        <article class="member-card">
+          <img src="images/member-5.jpg" alt="Member 5">
+          <h3>Carlos</h3>
+          <p>Keys / Synth</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="rider" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">For venues</p>
+        <h2>Small tech rider</h2>
+      </div>
+
+      <div class="rider-box">
+        <ul>
+          <li>5 performers on stage</li>
+          <li>Sets of 30–45 minutes</li>
+          <li>Vocal mic + stand</li>
+          <li>Backline needs: drum kit, bass amp, 2 guitar amps if available</li>
+          <li>Monitor mixes: at least 2 preferred</li>
+          <li>Stage size: flexible, but not tiny</li>
+        </ul>
+
+        <p>
+          Full stage plot and detailed input list available on request.
+        </p>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Booking</h2>
+      </div>
+
+      <p>
+        For gigs, press, and technical inquiries:
+      </p>
+
+      <a class="email-link" href="mailto:palceholder@placeholder.com">booking@example.com</a>
+
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://soundcloud.com" target="_blank" rel="noreferrer">SoundCloud</a>
+        <a href="https://bandcamp.com" target="_blank" rel="noreferrer">Bandcamp</a>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>© Bad Priorities</p>
+  </footer>
 </body>
 </html>
