@@ -90,8 +90,8 @@ a {
 }
 
 .logo {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -141,15 +141,13 @@ main {
 .hero-image-wrap {
   border: 1px solid var(--color-line);
   border-radius: 18px;
-  overflow: hidden;
   background: var(--color-surface-2);
 }
 
 .hero-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
   height: auto;
-  object-fit: cover;
+  display: block;
 }
 
 .hero-text {
@@ -325,6 +323,20 @@ h3 {
 
 .section:last-of-type {
   padding-bottom: 5rem;
+}
+
+.band-photo-wrap {
+  border: 1px solid var(--color-line);
+  border-radius: 18px;
+  background: var(--color-surface-2);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.band-photo {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @keyframes fadeInUp {
