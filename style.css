@@ -90,8 +90,8 @@ a {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
 }
 
@@ -256,6 +256,30 @@ h3 {
   border: 1px solid var(--color-line);
   border-radius: 16px;
   background: var(--color-surface);
+}
+
+.vibe-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.vibe-card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+
+.vibe-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.vibe-description {
+  margin: 0 0 1rem 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
 }
 
 .socials {
@@ -432,6 +456,10 @@ h3 {
   .embed-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .vibe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 980px) {
@@ -487,12 +515,18 @@ h3 {
   display: inline-block;
   margin: 0.5rem 0 1.5rem;
   color: var(--color-accent);
-  font-size: clamp(1.4rem, 5vw, 3rem);
+  font-size: clamp(1rem, 4vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.05em;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.12em;
   word-break: break-word;
+}
+
+@media (min-width: 700px) {
+  .email-link {
+    font-size: clamp(1.4rem, 5vw, 3rem);
+  }
 }
 
 .socials {
