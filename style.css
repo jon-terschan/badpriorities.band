@@ -258,13 +258,20 @@ h3 {
   background: var(--color-surface);
 }
 
+.section-copy {
+  color: var(--color-muted);
+  margin: 0 0 2rem 0;
+}
+
 .vibe-grid {
-  display: grid;
+  display: grid !important;
   gap: 1rem;
   grid-template-columns: 1fr;
+  width: 100%;
 }
 
 .vibe-card {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--color-line);
   border-radius: 16px;
@@ -458,7 +465,8 @@ h3 {
   }
 
   .vibe-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
