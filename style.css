@@ -428,7 +428,7 @@ h3 {
   position: absolute;
   left: 0.85rem;
   right: auto;
-  bottom: 0.35rem;
+  bottom: 0.85rem;
   z-index: 4;
   display: inline-flex;
   flex-direction: column;
@@ -446,35 +446,35 @@ h3 {
 .member-card:nth-child(1) .member-meta {
   left: 0.9rem;
   right: auto;
-  bottom: 0.45rem;
+  bottom: 0.95rem;
   transform: rotate(-3deg);
 }
 
 .member-card:nth-child(2) .member-meta {
   left: 1.1rem;
   right: auto;
-  bottom: 0.55rem;
+  bottom: 1.05rem;
   transform: rotate(2.5deg);
 }
 
 .member-card:nth-child(3) .member-meta {
   left: 1.35rem;
   right: auto;
-  bottom: 0.2rem;
+  bottom: 0.7rem;
   transform: rotate(-1.5deg);
 }
 
 .member-card:nth-child(4) .member-meta {
   left: 1.15rem;
   right: auto;
-  bottom: 0.4rem;
+  bottom: 0.9rem;
   transform: rotate(2deg);
 }
 
 .member-card:nth-child(5) .member-meta {
   left: 1.1rem;
   right: auto;
-  bottom: 0.25rem;
+  bottom: 0.75rem;
   transform: rotate(-2.4deg);
 }
 
